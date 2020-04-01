@@ -1,0 +1,70 @@
+
+
+COVID19CleanData.py
+COVID19DataRead.py
+COVID19DataReport.py
+COVID19WordLookup.py
+
+===================================
+these python scripts gather data
+from the UN files and put the
+data in the 'other' files
+===================================
+
+gatherAgriculture.py
+gatherAirPollution.py
+gatherHealth01.py
+gatherHealth02.py
+gatherIndustry.py
+gatherLandUse.py
+gatherPopDensity.py
+gatherOtherStats.py - redundant?
+
+===================================
+gathers COVID 19 stats and all other stats
+in one file...
+===================================
+
+gatherEverything.py
+
+===================================
+each file has one data field
+listed by country
+===================================
+
+otherStatsAgriculture.xlsx
+otherStatsAir.xlsx
+otherStatsHealth001.xlsx
+otherStatsHealth002.xlsx
+otherStatsIndustry.xlsx
+otherStatsLandUse.xlsx
+otherStats.xlsx
+
+===================================
+population (2020) by country
+===================================
+
+populations.xlsx
+
+===================================
+files garnered from kaggle
+===================================
+
+time_series_covid_19_confirmed.xlsx
+time_series_covid_19_deaths.xlsx
+
+===================================
+files garnered from a UN stats site
+===================================
+UNAgriculture001.xlsx
+UNAirPolution001.xlsx
+UNEducation001.xlsx     !
+UNHealth001.xlsx
+UNHealth002.xlsx
+UNIndustry001.xlsx
+UNLabor001.xlsx         !
+UNLandUse001.xlsx
+UNPopFertility001.xlsx  !
+UNPopulation001.xlsx
+UNStats.xlsx (population density)
+UNWater001.xlsx         !
