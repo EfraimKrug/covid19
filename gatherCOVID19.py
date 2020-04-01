@@ -148,7 +148,16 @@ for r in range(2, lastRow):
 
 print("Populations entered")
 
-# print(lastRow)
+sw = False
+for r in range(2, lastRow):
+    if not outSheet.cell(row=r, column=1).value:
+        if sw:
+            last = r 
+        else:
+            sw = True
+            first = r
+            count = 1
+
 # delete blank lines
 # for s in range(3, lastRow):
 #     r = lastRow - s + 3
