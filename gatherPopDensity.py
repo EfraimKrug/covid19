@@ -98,6 +98,6 @@ while countryLine[0] is not 'DONE':
     # print(countryLine[0])
 
 # getTrx(trx[trx.sheetnames[0]], pops[pops.sheetnames[0]])
-trx.save("otherStats.xlsx")
+trx.save("otherStatsPopDensity.xlsx")
 trx.close()
 other.close()
