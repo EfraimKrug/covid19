@@ -133,6 +133,11 @@ def gatherCollection(gatherSheet):
     gatherSheet.cell(row=1, column=6).value = "Health002"
     gatherSheet.cell(row=1, column=7).value = "Air"
     gatherSheet.cell(row=1, column=8).value = "Agriculture"
+    gatherSheet.cell(row=1, column=9).value = "Education"
+    gatherSheet.cell(row=1, column=10).value = "Labor"
+    gatherSheet.cell(row=1, column=11).value = "PopFert"
+    gatherSheet.cell(row=1, column=12).value = "Water"
+
     for stateName in dataCollection:
         for r in range(2, 120):
             if gatherSheet.cell(row=r, column=1).value:
@@ -149,6 +154,14 @@ def gatherCollection(gatherSheet):
                         gatherSheet.cell(row=r, column=7).value = str(dataCollection[stateName]['StatsAir'])
                     if 'StatsAgriculture' in dataCollection[stateName]:
                         gatherSheet.cell(row=r, column=8).value = str(dataCollection[stateName]['StatsAgriculture'])
+                    if 'StatsEducation' in dataCollection[stateName]:
+                        gatherSheet.cell(row=r, column=9).value = str(dataCollection[stateName]['StatsEducation'])
+                    if 'StatsLabor' in dataCollection[stateName]:
+                        gatherSheet.cell(row=r, column=10).value = str(dataCollection[stateName]['StatsLabor'])
+                    if 'StatsPopFert' in dataCollection[stateName]:
+                        gatherSheet.cell(row=r, column=11).value = str(dataCollection[stateName]['StatsPopFert'])
+                    if 'StatsWater' in dataCollection[stateName]:
+                        gatherSheet.cell(row=r, column=12).value = str(dataCollection[stateName]['StatsWater'])
 
 def printCollection():
     # sep = "\t"

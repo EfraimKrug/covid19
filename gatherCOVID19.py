@@ -112,7 +112,7 @@ outSheet.cell(row=1, column=1).value = "Country"
 outSheet.cell(row=1, column=2).value = "Population"
 
 for t in range(5, 90):
-    t1 = t + 5
+    t1 = t + 9
     outSheet.cell(row=1, column=t1).value = sheet.cell(row=1, column=t).value
 
 # get COVID data for relevant countries
@@ -120,10 +120,10 @@ for r in range(2, 500):
     if not sheet.cell(row=r, column=1).value and sheet.cell(row=r, column=2).value:
         for s in range(2, 2260):
             if oSheet.cell(row=s, column=2).value == sheet.cell(row=r, column=2).value:
-                print(oSheet.cell(row=s, column=2).value)
+                # print(oSheet.cell(row=s, column=2).value)
                 outSheet.cell(row=r, column=1).value = sheet.cell(row=r, column=2).value
                 for t in range(5, 100):
-                    t1 = t + 5
+                    t1 = t + 9
                     outSheet.cell(row=r, column=t1).value = sheet.cell(row=r, column=t).value
                 # print("Last Column: " + str(t) + "/" + str(t1))
                 # break
@@ -135,7 +135,7 @@ for s in range(3, 2500):
         lastRow = r
         break
 
-print("Last Row: " + str(lastRow))
+# print("Last Row: " + str(lastRow))
 
 popBook = openPopulationBook()
 popSheet = popBook[popBook.sheetnames[0]]
@@ -146,13 +146,13 @@ for r in range(2, lastRow):
         if country == popSheet.cell(row=s, column=1).value:
             outSheet.cell(row=r, column=2).value = popSheet.cell(row=s, column=2).value
 
-print("Populations entered")
+# print("Populations entered")
 
 sw = False
 for r in range(2, lastRow):
     if not outSheet.cell(row=r, column=1).value:
         if sw:
-            last = r 
+            last = r
         else:
             sw = True
             first = r
