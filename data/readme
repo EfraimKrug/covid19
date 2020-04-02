@@ -1,4 +1,12 @@
+===================================
+Python Scripts to build the
+allData.xlsx file:
+===================================
+gatherCOVID19.py  >> gathers COVID 19 data from data/...confirmed.xlsx
+gatherEverything.py >> compiles all other data from otherStats...
+gatherSlope.py >> calculates the slope for each country 
 
+===================================
 
 COVID19CleanData.py
 COVID19DataRead.py
@@ -13,12 +21,17 @@ data in the 'other' files
 
 gatherAgriculture.py
 gatherAirPollution.py
+gatherEducation.py
 gatherHealth01.py
 gatherHealth02.py
 gatherIndustry.py
+gatherLabor.py
 gatherLandUse.py
+gatherOtherStats.py
 gatherPopDensity.py
-gatherOtherStats.py - redundant?
+gatherPopFert.py
+gatherSlope.py
+gatherWater.py
 
 ===================================
 gathers COVID 19 stats and all other stats
@@ -34,11 +47,15 @@ listed by country
 
 otherStatsAgriculture.xlsx
 otherStatsAir.xlsx
+otherStatsEducation.xlsx
 otherStatsHealth001.xlsx
 otherStatsHealth002.xlsx
 otherStatsIndustry.xlsx
+otherStatsLabor.xlsx
 otherStatsLandUse.xlsx
-otherStats.xlsx
+otherStatsPopDensity.xlsx
+otherStatsPopFert.xlsx
+otherStatsWater.xlsx
 
 ===================================
 population (2020) by country
@@ -58,13 +75,13 @@ files garnered from a UN stats site
 ===================================
 UNAgriculture001.xlsx
 UNAirPolution001.xlsx
-UNEducation001.xlsx     !
+UNEducation001.xlsx
 UNHealth001.xlsx
 UNHealth002.xlsx
 UNIndustry001.xlsx
-UNLabor001.xlsx         !
+UNLabor001.xlsx
 UNLandUse001.xlsx
-UNPopFertility001.xlsx  !
+UNPopFertility001.xlsx
 UNPopulation001.xlsx
-UNStats.xlsx (population density)
-UNWater001.xlsx         !
+UNStats.xlsx (empty)
+UNWater001.xlsx

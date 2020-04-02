@@ -139,7 +139,7 @@ def gatherCollection(gatherSheet):
     gatherSheet.cell(row=1, column=12).value = "Water"
 
     for stateName in dataCollection:
-        for r in range(2, 120):
+        for r in range(2, 270):
             if gatherSheet.cell(row=r, column=1).value:
                 if stateName == gatherSheet.cell(row=r, column=1).value:
                     if 'StatsPopDensity' in dataCollection[stateName]:
